@@ -1,0 +1,77 @@
+*{
+    margin:0%;
+    padding:0%;
+    box-sizing:border-box;
+}
+
+html,body{
+    height:100%;
+    width:100%;
+    background-color: rgb(252, 207, 214);
+}
+
+#main{
+    height:100%;
+    width:100%;
+    /* display:flex;
+    align-items:center;
+    justify-content:center; */
+}
+
+.card{
+    position:absolute;
+    top:50%;
+    left:50%; 
+    /* transform: translate(-50%,-50%);      Here it gives five cards placed on each other */
+    height:300px; 
+    width:230px;
+    border:1px solid salmon;
+    border-radius:20px;
+}
+#card1{
+    transform:translate(-50%,-50%); 
+    z-index: 5;
+}
+
+#card2{
+    z-index: 4;
+    transform:translate(-50%,-50%) rotate(-7deg);
+}
+
+#card3{
+    z-index: 3;
+    transform:translate(-50%,-50%) rotate(-14deg);
+}
+
+#card4{
+    z-index: 2;
+    transform:translate(-50%,-50%) rotate(-21deg);
+}
+
+#card5{
+    z-index: 1;
+    transform:translate(-50%,-50%) rotate(-28deg);
+} 
+
+img{
+    height:100%;
+    width:100%;
+    object-fit:cover;
+    border-radius: 20px;
+}
+
+#card2:hover{
+    z-index:10;
+}
+
+#card3:hover{
+    z-index:10;
+}
+
+#card4:hover{
+    z-index:10;
+}
+
+#card5:hover{
+    z-index:10;
+}
